@@ -1,0 +1,13 @@
+libjpeg-9.dll
+libpng16-16.dll
+libtiff-5.dll
+libwebp-4.dll
+zlib1.dll
+
+SDL2.dll
+SDL2_image.dll
+
+Perfect.vcxproj
+Perfect.vcxproj.filters
+
+Debug
