@@ -13,29 +13,27 @@ class Visuals {
 		static SDL_Window* getWindow();
 		static SDL_Renderer* getRenderer();
 
-		static void renderObj(Renderable* obj);
+		static void recheckScreenDims();
+		static void setFullScreen(bool fs);
+
+		static SDL_Rect* getViewRect();
+		static SDL_Point getViewCenter();
+		static void setViewCenter(SDL_Point pt);
+		
+
+
+
+		static SDL_Rect convertRect(SDL_Rect rect);
+		static SDL_Point convertPoint(SDL_Point pt);
 
 	private:
 		static SDL_Window* MAINwindow;
 		static SDL_Renderer* MAINrenderer;
 
+		static SDL_Rect viewRect;
+		static SDL_Point screenDims;
 };
 
-
-class Renderable {
-	public:
-		Renderable();
-
-		void setVisible();
-		bool getVisible();
-		void setShouldRemove();
-		bool getShouldRemove();
-
-	private:
-		bool visible;
-		bool shouldRemove;
-
-};
 
 
 
